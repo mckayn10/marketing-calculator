@@ -94,7 +94,7 @@ const MainScreen = () => {
 
                 </div>
                 <div className="btn-container">
-                    <div></div>
+                    <div className='filler'></div>
                     <div>
                         <button className="clear-btn btn" onClick={() => handleClear()}>Clear</button>
                         <button className="calc-btn btn" onClick={() => handleCalculate()}>Calculate</button>
