@@ -1,6 +1,5 @@
 .screen-container {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
@@ -17,7 +16,7 @@
 .top-container {
     background-color: rgba(18, 95, 167, 0.685);
     background-image: url('../assets/golfnow-calculator-bluebkgd.png');
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
