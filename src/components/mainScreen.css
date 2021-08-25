@@ -27,7 +27,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 20px;
 }
 
 .input {
@@ -50,7 +49,6 @@
     flex-direction: column;
     align-items: flex-end;
     width: 95%;
-    /* margin: 10px; */
 }
 .logo {
     margin-right: 20px;
@@ -99,7 +97,6 @@
 .bottom-container {
     width: 100%;
     padding-top: 20px;
-    /* background-color: mediumseagreen; */
 }
 .bottom-content-container {
     display: flex;
@@ -110,7 +107,6 @@
     max-width: 770px;
     margin-top: 25px;
     margin-bottom: 20px;
-    /* background-color: mediumorchid; */
 }
 
 .reality-check-container, .foreup-costs-container {
@@ -123,7 +119,6 @@
 }
 
 .reality-check-container {
-    /* background-color: rgba(255, 0, 0, 0.096); */
     display: flex;
     flex-direction: column;
 
@@ -178,7 +173,6 @@
 .losing-text {
     font-size: 22px;
     font-weight: 500;
-    /* padding: 2px; */
 }
 
 .rc-input-title {
@@ -202,8 +196,6 @@
     margin-bottom: -9px;
     margin-left: -6px;
     margin-right: -8px;
-    /* background-color: red; */
-
 }
 
 .or {

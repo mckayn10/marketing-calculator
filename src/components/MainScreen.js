@@ -34,7 +34,7 @@ const MainScreen = () => {
 
         if (!numTeeTimes || !numTrades || !costOfRound) {
             setShowError(true)
-            setErrorText('Please enter valid numbers')
+            setErrorText('*Please enter valid numbers')
             return false
         }
 
@@ -54,23 +54,23 @@ const MainScreen = () => {
     }
 
     const couldBeLosing = () => {
-        return numberWithCommas(costOfRound * (numTrades * 365))
+        return numberWithCommas(Math.round(costOfRound * (numTrades * 365)))
     }
 
     const atLeastLosing = () => {
         let tradesBooked = .45
-        return numberWithCommas(((numTrades * 365) * tradesBooked) * costOfRound)
+        return numberWithCommas(Math.round(((numTrades * 365) * tradesBooked) * costOfRound))
     }
 
     const calcCouldGain = () => {
         let maxRevLost = costOfRound * (numTrades * 365)
-        return numberWithCommas(maxRevLost - avgForeupCost)
+        return numberWithCommas(Math.round(maxRevLost - avgForeupCost))
     }
 
     const calcAtLeastGain = () => {
         let tradesBooked = .45
         let avgRevLost = ((numTrades * 365) * tradesBooked) * costOfRound
-        return numberWithCommas(avgRevLost - avgForeupCost)
+        return numberWithCommas(Math.round(avgRevLost - avgForeupCost))
     }
 
 
@@ -84,8 +84,8 @@ const MainScreen = () => {
                 </div>
                 <div className="title">What is GolfNow costing you?</div>
                 {showError
-                    ? <div>{errorText}</div>
-                    : null
+                    ? <div style={{color: 'rgb(224, 34, 34)', fontSize: '18px', fontWeight: 'bold', }}>{errorText}</div>
+                    : <div style={{color: 'transparent', fontSize: '18px', fontWeight: 'bold', }}>{errorText}</div>
                 }
                 <div className="inputs-container">
                     <input className='input' placeholder="How many tee times do you offer per day?" onChange={(e) => setNumTeeTimes(e.target.value)} value={numTeeTimes} />
@@ -106,7 +106,7 @@ const MainScreen = () => {
                     <div className="reality-check-container">
                         <div className='rc-title'>Reality Check</div>
                         <div className='rc-description'>When using GolfNow</div>
-                        <div className='losing-text rc-input-title'>You <i>could</i> be losing</div>
+                        <div className='losing-text rc-input-title'>You could be losing</div>
                         <div className='cost-input-container'>
                             <input
                                 className="cost-input"
@@ -119,7 +119,7 @@ const MainScreen = () => {
                                 : null
                             }
                         </div>
-                        <div className='losing-text rc-input-title'>You are <i>at least</i> losing</div>
+                        <div className='losing-text rc-input-title'>You are at least losing</div>
                         <div className='cost-input-container'>
                             <input
                                 className="cost-input"
@@ -139,9 +139,9 @@ const MainScreen = () => {
                         <input
                             className="cost-input avg-fc-input fc-input"
                             disabled={true}
-                            value={'$' + numberWithCommas(avgForeupCost)}
+                            value={'$' + numberWithCommas(Math.round(avgForeupCost))}
                         />
-                        <div className='losing-text rc-input-title'>You <i>could</i> gain</div>
+                        <div className='losing-text rc-input-title'>You could gain</div>
                         <div className='cost-input-container'>
                             <input
                                 className="cost-input fc-input"
@@ -155,7 +155,7 @@ const MainScreen = () => {
                             }
 
                         </div>
-                        <div className='losing-text rc-input-title'>You would <i>at least</i> gain</div>
+                        <div className='losing-text rc-input-title'>You would at least gain</div>
                         <div className='cost-input-container'>
                             <input
                                 className="cost-input fc-input"
