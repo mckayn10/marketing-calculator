@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/marketing-calculator/static/css/main.ec8a8760.chunk.css",
-    "main.js": "/marketing-calculator/static/js/main.a5633d4c.chunk.js",
-    "main.js.map": "/marketing-calculator/static/js/main.a5633d4c.chunk.js.map",
-    "runtime-main.js": "/marketing-calculator/static/js/runtime-main.99547e00.js",
-    "runtime-main.js.map": "/marketing-calculator/static/js/runtime-main.99547e00.js.map",
-    "static/js/2.f9b65ae7.chunk.js": "/marketing-calculator/static/js/2.f9b65ae7.chunk.js",
-    "static/js/2.f9b65ae7.chunk.js.map": "/marketing-calculator/static/js/2.f9b65ae7.chunk.js.map",
-    "static/js/3.41781d65.chunk.js": "/marketing-calculator/static/js/3.41781d65.chunk.js",
-    "static/js/3.41781d65.chunk.js.map": "/marketing-calculator/static/js/3.41781d65.chunk.js.map",
-    "index.html": "/marketing-calculator/index.html",
-    "static/css/main.ec8a8760.chunk.css.map": "/marketing-calculator/static/css/main.ec8a8760.chunk.css.map",
-    "static/js/2.f9b65ae7.chunk.js.LICENSE.txt": "/marketing-calculator/static/js/2.f9b65ae7.chunk.js.LICENSE.txt",
-    "static/media/mainScreen.css": "/marketing-calculator/static/media/golfnow-calculator-bluebkgd.40b8ab2f.png",
-    "static/media/logo.6ce24c58.svg": "/marketing-calculator/static/media/logo.6ce24c58.svg"
+    "main.css": "/static/css/main.948d1c52.chunk.css",
+    "main.js": "/static/js/main.a5633d4c.chunk.js",
+    "main.js.map": "/static/js/main.a5633d4c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.47a37083.js",
+    "runtime-main.js.map": "/static/js/runtime-main.47a37083.js.map",
+    "static/js/2.f9b65ae7.chunk.js": "/static/js/2.f9b65ae7.chunk.js",
+    "static/js/2.f9b65ae7.chunk.js.map": "/static/js/2.f9b65ae7.chunk.js.map",
+    "static/js/3.41781d65.chunk.js": "/static/js/3.41781d65.chunk.js",
+    "static/js/3.41781d65.chunk.js.map": "/static/js/3.41781d65.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.948d1c52.chunk.css.map": "/static/css/main.948d1c52.chunk.css.map",
+    "static/js/2.f9b65ae7.chunk.js.LICENSE.txt": "/static/js/2.f9b65ae7.chunk.js.LICENSE.txt",
+    "static/media/mainScreen.css": "/static/media/golfnow-calculator-bluebkgd.40b8ab2f.png",
+    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.99547e00.js",
+    "static/js/runtime-main.47a37083.js",
     "static/js/2.f9b65ae7.chunk.js",
-    "static/css/main.ec8a8760.chunk.css",
+    "static/css/main.948d1c52.chunk.css",
     "static/js/main.a5633d4c.chunk.js"
   ]
 }
